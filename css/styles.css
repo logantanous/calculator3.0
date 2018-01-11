@@ -1,17 +1,23 @@
 .container {
-    max-width: 235px;
-    /*position: absolute;
-    left: 20px;*/
-    border: none;
-    margin-top: 20px;
-    border-left: #686868 1px solid;
-    border-right: #686868 1px solid;
-    border-bottom: #404040 1px solid;
-    border-radius:7px;
-    -webkit-box-shadow: 0px 0px 55px 10px rgba(0,0,0,0.32);
-    -moz-box-shadow: 0px 0px 55px 10px rgba(0,0,0,0.32);
-    box-shadow: 0px 0px 55px 10px rgba(0,0,0,0.32);
-    overflow:hidden;
+  min-width: 235px;
+
+  border: none;
+  margin-top: 20px;
+  border-left: #686868 1px solid;
+  border-right: #686868 1px solid;
+  border-bottom: #404040 1px solid;
+  border-radius:7px;
+  -webkit-box-shadow: 0px 0px 55px 10px rgba(0,0,0,0.32);
+  -moz-box-shadow: 0px 0px 55px 10px rgba(0,0,0,0.32);
+  box-shadow: 0px 0px 55px 10px rgba(0,0,0,0.32);
+  overflow:hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
 }
 
 .col {
@@ -36,10 +42,12 @@
   height: 80px;
 }
 
+
 .container .row:first-of-type .col {
   font-size: 50px;
   padding-top:30px;
   padding-right: 14px;
+  font-weight: lighter;
 }
 
 .container .row:first-of-type+.row {
@@ -65,8 +73,18 @@
   margin-left: 1px;
 }
 
+.container .row:last-of-type .col:first {
+  margin-left: -1px;
+}
+
 .container .row:last-of-type .col {
-  margin-left: 0px;
+  margin-left: 1px;
+}
+
+
+.container .row:last-of-type .col:last-of-type {
+  margin-left: -2px;
+  border-left: 1px solid #8E8E8E;
 }
 
 .container .row:last-of-type .col:last-of-type {
@@ -97,4 +115,29 @@ img {
 #x {
   font-size: 18px;
   font-weight: lighter;
+}
+
+.plus {
+  top: -3px;
+  position: relative;
+}
+
+.minus {
+  top: 3px;
+  position: relative;
+}
+
+.slash {
+  display:inline-block;
+  -webkit-transform:scale(3,1); /* Safari and Chrome */
+  -moz-transform:scale(3,1); /* Firefox */
+  -ms-transform:scale(3,1); /* IE 9 */
+  -o-transform:scale(3,1); /* Opera */
+  transform:scale(3,1); /* W3C */
+  font-weight: lighter;
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
 }
