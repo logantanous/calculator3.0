@@ -20,6 +20,8 @@
                                     supported by Chrome and Opera */
 }
 
+//.container .row:nth-child(2) {text-decoration: underline;}
+
 .col {
   text-align: center;
   padding: 5px;
