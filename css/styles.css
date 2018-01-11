@@ -73,17 +73,21 @@
   margin-left: 1px;
 }
 
+.container .col-6+.col-3 {
+  border-right: none;
+}
+
 .container .row:last-of-type .col:first {
   margin-left: -1px;
 }
 
 .container .row:last-of-type .col {
-  margin-left: 1px;
+  margin-left: 0px;
 }
 
 
 .container .row:last-of-type .col:last-of-type {
-  margin-left: -2px;
+  margin-left: 0px;
   border-left: 1px solid #8E8E8E;
 }
 
