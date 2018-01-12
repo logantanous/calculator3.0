@@ -23,8 +23,13 @@ $(document).ready(function() {
     var itemsInside = $(".row"+i).text();
     console.log(itemsInside);
 
+<<<<<<< HEAD
     //I have to figure out a way to create the second array - perhaps based
 
+=======
+    //I have to figure out a way to create the second array - perhaps based
+
+>>>>>>> 1bb4f061d59b5b3f732c755876ebf9b1eedb79b3
     k++;
   }
 
