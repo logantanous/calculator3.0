@@ -22,7 +22,9 @@ $(document).ready(function() {
 
     var itemsInside = $(".row"+i).text();
     console.log(itemsInside);
-    
+
+    //I have to figure out a way to create the second array - perhaps based
+
     k++;
   }
 
